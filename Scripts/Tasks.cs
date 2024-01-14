@@ -115,7 +115,7 @@ public class Tasks
     /// <param name="firstWeight">Первая гиря, от которой нужно начать поиск</param>
     /// <param name="wAmount">Количесто гирь, среди которых стоит проводить поиск</param>
     /// <param name="weights">Веса всех гирь</param>
-    /// <returns> Возвращает количество сделанных взвешиавний</returns>
+    /// <returns> Возвращает количество сделанных взвешиваний</returns>
     public static int FindWeight(out int wNum, out bool isWeightHeavy, int firstWeight, int wAmount, float[] weights)
     {
         // Количество взвешиваний
