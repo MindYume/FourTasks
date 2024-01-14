@@ -13,7 +13,7 @@ size = 30
 font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=4]
-size = 15
+size = 25
 font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=3]
@@ -44,6 +44,7 @@ margin_bottom = 52.0
 custom_fonts/font = SubResource( 1 )
 text = "10"
 max_length = 3
+caret_blink = true
 
 [node name="Label" type="Label" parent="Weights/Weight1"]
 margin_left = -160.0
@@ -60,6 +61,7 @@ margin_bottom = 108.0
 custom_fonts/font = SubResource( 1 )
 text = "5"
 max_length = 3
+caret_blink = true
 
 [node name="Label" type="Label" parent="Weights/Weight2"]
 margin_left = -160.0
@@ -76,6 +78,7 @@ margin_bottom = 164.0
 custom_fonts/font = SubResource( 1 )
 text = "5"
 max_length = 3
+caret_blink = true
 
 [node name="Label" type="Label" parent="Weights/Weight3"]
 margin_left = -160.0
@@ -92,6 +95,7 @@ margin_bottom = 220.0
 custom_fonts/font = SubResource( 1 )
 text = "5"
 max_length = 3
+caret_blink = true
 
 [node name="Label" type="Label" parent="Weights/Weight4"]
 margin_left = -160.0
@@ -108,6 +112,7 @@ margin_bottom = 276.0
 custom_fonts/font = SubResource( 1 )
 text = "5"
 max_length = 3
+caret_blink = true
 
 [node name="Label" type="Label" parent="Weights/Weight5"]
 margin_left = -160.0
@@ -124,6 +129,7 @@ margin_bottom = 332.0
 custom_fonts/font = SubResource( 1 )
 text = "5"
 max_length = 3
+caret_blink = true
 
 [node name="Label" type="Label" parent="Weights/Weight6"]
 margin_left = -160.0
@@ -140,6 +146,7 @@ margin_bottom = 388.0
 custom_fonts/font = SubResource( 1 )
 text = "5"
 max_length = 3
+caret_blink = true
 
 [node name="Label" type="Label" parent="Weights/Weight7"]
 margin_left = -160.0
@@ -157,6 +164,7 @@ rect_pivot_offset = Vector2( -804, -314 )
 custom_fonts/font = SubResource( 1 )
 text = "5"
 max_length = 3
+caret_blink = true
 
 [node name="Label" type="Label" parent="Weights/Weight8"]
 margin_left = -160.0
@@ -167,9 +175,9 @@ custom_fonts/font = SubResource( 2 )
 text = "Вес гири 8"
 
 [node name="OutputLabel" type="Label" parent="."]
-margin_left = 310.0
+margin_left = 318.0
 margin_top = 20.0
-margin_right = 581.0
+margin_right = 782.0
 margin_bottom = 465.0
 custom_fonts/font = SubResource( 4 )
 autowrap = true

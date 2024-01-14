@@ -14,7 +14,7 @@ outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=3]
-size = 15
+size = 25
 font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=4]
@@ -41,6 +41,7 @@ margin_bottom = 180.0
 custom_fonts/font = SubResource( 1 )
 text = "0"
 max_length = 2
+caret_blink = true
 
 [node name="Label" type="Label" parent="NumberA"]
 margin_left = -177.0
@@ -58,6 +59,7 @@ margin_bottom = 252.0
 custom_fonts/font = SubResource( 1 )
 text = "0"
 max_length = 2
+caret_blink = true
 
 [node name="Label" type="Label" parent="NumberB"]
 margin_left = -177.0
@@ -70,7 +72,7 @@ text = "Число B"
 [node name="OutputLabel" type="Label" parent="."]
 margin_left = 357.0
 margin_top = 20.0
-margin_right = 581.0
+margin_right = 774.0
 margin_bottom = 580.0
 custom_fonts/font = SubResource( 3 )
 autowrap = true

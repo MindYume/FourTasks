@@ -19,7 +19,7 @@ public class Task3 : ColorRect
         }
         else
         {
-            _outputLabel.Text = "Число введены неправильно";
+            _outputLabel.Text = "Число введено неправильно";
         }
     }
 }
