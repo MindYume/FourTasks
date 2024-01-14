@@ -1,0 +1,51 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scripts/Main.cs" type="Script" id=1]
+[ext_resource path="res://OpenSans/OpenSans-VariableFont_wdth,wght.ttf" type="DynamicFontData" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 60
+font_data = ExtResource( 2 )
+
+[node name="Main" type="ColorRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.25098, 0.572549, 0.176471, 1 )
+script = ExtResource( 1 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -250.0
+margin_top = -250.0
+margin_right = 250.0
+margin_bottom = 250.0
+
+[node name="Task2" type="Button" parent="VBoxContainer"]
+margin_right = 500.0
+margin_bottom = 164.0
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 1 )
+text = "Задача 2"
+
+[node name="Task3" type="Button" parent="VBoxContainer"]
+margin_top = 168.0
+margin_right = 500.0
+margin_bottom = 332.0
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 1 )
+text = "Задача 3"
+
+[node name="Task4" type="Button" parent="VBoxContainer"]
+margin_top = 336.0
+margin_right = 500.0
+margin_bottom = 500.0
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 1 )
+text = "Задача 4"
+
+[connection signal="pressed" from="VBoxContainer/Task2" to="." method="_on_Task2_pressed"]
+[connection signal="pressed" from="VBoxContainer/Task3" to="." method="_on_Task3_pressed"]
+[connection signal="pressed" from="VBoxContainer/Task4" to="." method="_on_Task4_pressed"]

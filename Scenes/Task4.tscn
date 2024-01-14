@@ -1,0 +1,185 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Objects/BackButton.tscn" type="PackedScene" id=1]
+[ext_resource path="res://OpenSans/OpenSans-VariableFont_wdth,wght.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Scripts/Task4.cs" type="Script" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 30
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 30
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 15
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 40
+font_data = ExtResource( 2 )
+
+[node name="Task4" type="ColorRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.25098, 0.572549, 0.176471, 1 )
+script = ExtResource( 3 )
+
+[node name="BackButton" parent="." instance=ExtResource( 1 )]
+margin_left = 25.0
+margin_top = 21.0
+margin_right = 183.0
+margin_bottom = 96.0
+
+[node name="Weights" type="VBoxContainer" parent="."]
+margin_left = 188.0
+margin_top = 117.0
+margin_right = 294.0
+margin_bottom = 561.0
+
+[node name="Weight1" type="LineEdit" parent="Weights"]
+margin_right = 106.0
+margin_bottom = 52.0
+custom_fonts/font = SubResource( 1 )
+text = "10"
+max_length = 3
+
+[node name="Label" type="Label" parent="Weights/Weight1"]
+margin_left = -160.0
+margin_top = 6.0
+margin_right = -8.0
+margin_bottom = 48.0
+custom_fonts/font = SubResource( 2 )
+text = "Вес гири 1"
+
+[node name="Weight2" type="LineEdit" parent="Weights"]
+margin_top = 56.0
+margin_right = 106.0
+margin_bottom = 108.0
+custom_fonts/font = SubResource( 1 )
+text = "5"
+max_length = 3
+
+[node name="Label" type="Label" parent="Weights/Weight2"]
+margin_left = -160.0
+margin_top = 6.0
+margin_right = -8.0
+margin_bottom = 48.0
+custom_fonts/font = SubResource( 2 )
+text = "Вес гири 2"
+
+[node name="Weight3" type="LineEdit" parent="Weights"]
+margin_top = 112.0
+margin_right = 106.0
+margin_bottom = 164.0
+custom_fonts/font = SubResource( 1 )
+text = "5"
+max_length = 3
+
+[node name="Label" type="Label" parent="Weights/Weight3"]
+margin_left = -160.0
+margin_top = 6.0
+margin_right = -8.0
+margin_bottom = 48.0
+custom_fonts/font = SubResource( 2 )
+text = "Вес гири 3"
+
+[node name="Weight4" type="LineEdit" parent="Weights"]
+margin_top = 168.0
+margin_right = 106.0
+margin_bottom = 220.0
+custom_fonts/font = SubResource( 1 )
+text = "5"
+max_length = 3
+
+[node name="Label" type="Label" parent="Weights/Weight4"]
+margin_left = -160.0
+margin_top = 6.0
+margin_right = -8.0
+margin_bottom = 48.0
+custom_fonts/font = SubResource( 2 )
+text = "Вес гири 4"
+
+[node name="Weight5" type="LineEdit" parent="Weights"]
+margin_top = 224.0
+margin_right = 106.0
+margin_bottom = 276.0
+custom_fonts/font = SubResource( 1 )
+text = "5"
+max_length = 3
+
+[node name="Label" type="Label" parent="Weights/Weight5"]
+margin_left = -160.0
+margin_top = 6.0
+margin_right = -8.0
+margin_bottom = 48.0
+custom_fonts/font = SubResource( 2 )
+text = "Вес гири 5"
+
+[node name="Weight6" type="LineEdit" parent="Weights"]
+margin_top = 280.0
+margin_right = 106.0
+margin_bottom = 332.0
+custom_fonts/font = SubResource( 1 )
+text = "5"
+max_length = 3
+
+[node name="Label" type="Label" parent="Weights/Weight6"]
+margin_left = -160.0
+margin_top = 6.0
+margin_right = -8.0
+margin_bottom = 48.0
+custom_fonts/font = SubResource( 2 )
+text = "Вес гири 6"
+
+[node name="Weight7" type="LineEdit" parent="Weights"]
+margin_top = 336.0
+margin_right = 106.0
+margin_bottom = 388.0
+custom_fonts/font = SubResource( 1 )
+text = "5"
+max_length = 3
+
+[node name="Label" type="Label" parent="Weights/Weight7"]
+margin_left = -160.0
+margin_top = 6.0
+margin_right = -8.0
+margin_bottom = 48.0
+custom_fonts/font = SubResource( 2 )
+text = "Вес гири 7"
+
+[node name="Weight8" type="LineEdit" parent="Weights"]
+margin_top = 392.0
+margin_right = 106.0
+margin_bottom = 444.0
+rect_pivot_offset = Vector2( -804, -314 )
+custom_fonts/font = SubResource( 1 )
+text = "5"
+max_length = 3
+
+[node name="Label" type="Label" parent="Weights/Weight8"]
+margin_left = -160.0
+margin_top = 6.0
+margin_right = -8.0
+margin_bottom = 48.0
+custom_fonts/font = SubResource( 2 )
+text = "Вес гири 8"
+
+[node name="OutputLabel" type="Label" parent="."]
+margin_left = 310.0
+margin_top = 20.0
+margin_right = 581.0
+margin_bottom = 465.0
+custom_fonts/font = SubResource( 4 )
+autowrap = true
+
+[node name="Calculate" type="Button" parent="."]
+margin_left = 347.0
+margin_top = 485.0
+margin_right = 564.0
+margin_bottom = 563.0
+custom_fonts/font = SubResource( 3 )
+text = "Посчитать"
+
+[connection signal="pressed" from="Calculate" to="." method="_on_Calculate_pressed"]
