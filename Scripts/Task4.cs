@@ -57,24 +57,7 @@ public class Task4 : ColorRect
 
             if (commonWeightsAmount == 7)
             {
-                int wCount;
-                int wNum;
-                bool isWeightHeavy;
-                int firstWeight = 0;
-                int wAmount = 8;
-
-                wCount = Tasks.FindWeight(out wNum, out isWeightHeavy, firstWeight, wAmount, weightsFloat);
-
-                _outputLabel.Text = $"Номер гири с отличным весом: {wNum}\n";
-                if (isWeightHeavy)
-                {
-                    _outputLabel.Text += $"Данная гиря тяжелее остальных\n";
-                }
-                else
-                {
-                    _outputLabel.Text += $"Данная гиря легче остальных\n";
-                }
-                _outputLabel.Text += $"Количество взвешиваний: {wCount}";
+                _outputLabel.Text = Tasks.Task4(weightsFloat);
             }
             else
             {

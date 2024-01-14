@@ -87,6 +87,22 @@ public class Tasks
     {
         string output = "";
 
+        int wCount; // Количество взвешиваний
+        int wNum; // Номер гири с отличным весом
+        bool isWeightHeavy; // Тяжелее ли найденная гиря остальных гирь
+
+        wCount = FindWeight(out wNum, out isWeightHeavy, 0, 8, weights);
+
+        output = $"Номер гири с отличным весом: {wNum}\n";
+        if (isWeightHeavy)
+        {
+            output += $"Данная гиря тяжелее остальных\n";
+        }
+        else
+        {
+            output += $"Данная гиря легче остальных\n";
+        }
+        output += $"Количество взвешиваний: {wCount}";
 
         return output;
     }

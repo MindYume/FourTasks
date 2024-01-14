@@ -48,6 +48,7 @@ margin_bottom = 233.0
 custom_fonts/font = SubResource( 1 )
 text = "100"
 max_length = 4
+caret_blink = true
 
 [node name="Label" type="Label" parent="Steps"]
 margin_left = -162.0
